@@ -13,7 +13,7 @@ from typing import Any, Callable, List, Tuple, Union
 import torch
 from torch import nn, Tensor
 from torch.utils.checkpoint import checkpoint
-from torchmultimodal import _PATH_MANAGER
+from torchmultimodal.torchmultimodal import _PATH_MANAGER
 
 
 def get_current_device() -> Union[str, torch.device]:

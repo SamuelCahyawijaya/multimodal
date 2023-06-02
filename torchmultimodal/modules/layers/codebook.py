@@ -9,7 +9,7 @@ from typing import Any, List, Mapping, NamedTuple, Tuple, Union
 import torch
 from torch import nn, Size, Tensor
 from torch.nn import functional as F
-from torchmultimodal.utils.common import shift_dim
+from torchmultimodal.torchmultimodal.utils.common import shift_dim
 
 
 class CodebookOutput(NamedTuple):

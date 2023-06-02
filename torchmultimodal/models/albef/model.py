@@ -11,7 +11,7 @@ from typing import Tuple
 import torch
 import torch.nn.functional as F
 from torch import nn, Tensor
-from torchmultimodal.utils.common import momentum_update, remove_grad
+from torchmultimodal.torchmultimodal.utils.common import momentum_update, remove_grad
 
 
 ALBEFOutput = namedtuple(

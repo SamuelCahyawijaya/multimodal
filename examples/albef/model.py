@@ -10,17 +10,17 @@ from typing import Any, Callable, Dict, List, Optional, Tuple, Union
 import torch
 import torch.nn.functional as F
 from torch import nn, Tensor
-from torchmultimodal.models.albef.image_encoder import ALBEFVisionEncoder
-from torchmultimodal.models.albef.model import ALBEFModel, ALBEFModelWithSimilarity
-from torchmultimodal.models.albef.multimodal_encoder import ALBEFMultimodalEncoder
-from torchmultimodal.modules.encoders.bert_text_encoder import bert_text_encoder
-from torchmultimodal.modules.layers.text_embedding import BERTTextEmbeddings
-from torchmultimodal.modules.losses.albef import (
+from torchmultimodal.torchmultimodal.models.albef.image_encoder import ALBEFVisionEncoder
+from torchmultimodal.torchmultimodal.models.albef.model import ALBEFModel, ALBEFModelWithSimilarity
+from torchmultimodal.torchmultimodal.models.albef.multimodal_encoder import ALBEFMultimodalEncoder
+from torchmultimodal.torchmultimodal.modules.encoders.bert_text_encoder import bert_text_encoder
+from torchmultimodal.torchmultimodal.modules.layers.text_embedding import BERTTextEmbeddings
+from torchmultimodal.torchmultimodal.modules.losses.albef import (
     CausalLanguageModelingLoss,
     ImageTextContrastiveLoss,
 )
-from torchmultimodal.utils.attention import get_causal_attention_mask
-from torchmultimodal.utils.common import momentum_update, remove_grad
+from torchmultimodal.torchmultimodal.utils.attention import get_causal_attention_mask
+from torchmultimodal.torchmultimodal.utils.common import momentum_update, remove_grad
 
 
 _ALBEF_PRETRAINED_URLS = {

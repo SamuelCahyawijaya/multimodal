@@ -8,7 +8,7 @@ from typing import Callable, List, Optional, Union
 
 import torch
 from torch import nn, Tensor
-from torchmultimodal.modules.fusions.deepset_fusion import (
+from torchmultimodal.torchmultimodal.modules.fusions.deepset_fusion import (
     DeepsetFusionModule,
     DeepsetFusionWithTransformer,
 )

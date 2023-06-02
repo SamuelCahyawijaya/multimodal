@@ -9,7 +9,7 @@ from typing import Any, Dict, Optional, Tuple, Union
 import torch
 from torch import nn, Tensor
 from torch.nn import functional as F
-from torchmultimodal.utils.common import shift_dim
+from torchmultimodal.torchmultimodal.utils.common import shift_dim
 
 
 class SelfAttention(nn.Module):

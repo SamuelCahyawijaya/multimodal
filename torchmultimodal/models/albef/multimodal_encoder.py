@@ -8,8 +8,8 @@
 from typing import Callable, Optional
 
 from torch import nn, Tensor
-from torchmultimodal.modules.layers.transformer import TransformerCrossAttentionLayer
-from torchmultimodal.utils.attention import get_extended_attention_mask
+from torchmultimodal.torchmultimodal.modules.layers.transformer import TransformerCrossAttentionLayer
+from torchmultimodal.torchmultimodal.utils.attention import get_extended_attention_mask
 
 
 class ALBEFMultimodalEncoder(nn.Module):

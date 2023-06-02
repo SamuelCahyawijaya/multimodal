@@ -8,12 +8,12 @@ from typing import Callable, Optional
 
 import torch
 from torch import nn, Tensor
-from torchmultimodal.modules.layers.text_embedding import BERTTextEmbeddings
-from torchmultimodal.modules.layers.transformer import (
+from torchmultimodal.torchmultimodal.modules.layers.text_embedding import BERTTextEmbeddings
+from torchmultimodal.torchmultimodal.modules.layers.transformer import (
     TransformerEncoder,
     TransformerOutput,
 )
-from torchmultimodal.utils.attention import get_extended_attention_mask
+from torchmultimodal.torchmultimodal.utils.attention import get_extended_attention_mask
 
 
 class BERTTextEncoder(nn.Module):
